@@ -1,8 +1,8 @@
 const express = require("express"),
 	  PORT = process.env.PORT || 8080,
 	  app = express(),
-	  path = require("path"),
-	  reload = require("reload");
+	  path = require("path");
+// 	  reload = require("reload");
 
 
 app.get("/", (req, res) => {
