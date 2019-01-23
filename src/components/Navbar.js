@@ -7,25 +7,22 @@ export default class Navbar extends Component {
 		M.Sidenav.init(this.sidenav);
 	}
 
+	navCode() {
+		<ul id="nav-mobile" className="right hide-on-med-and-down">
+			<li><a href="#about-container">About</a></li>
+			<li><a href="#portfolio-conatiner">Portfolio</a></li>
+			<li><a href="#footer-container">Contact</a></li>
+		</ul>
+	}
+
 	render() {
 		return (
 			<div className="navbar-fixed">
 				<nav className="nav-extended" id="nav-container">
-					<div className="nav-wrapper">
-						<a className="brand-logo">Yanlin Zhu</a>
-						<a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
-						<ul id="nav-mobile" className="right hide-on-med-and-down">
-							<li><a href="#about-container">About</a></li>
-							<li><a href="#portfolio-conatiner">Portfolio</a></li>
-							<li><a href="#footer-container">Contact</a></li>
-						</ul>
+					<div className="nav-wrapper center">
+						<a className="brand-logo">Yanlin Zhu (Eric)</a>
 					</div>
 				</nav>
-				<ul className="sidenav" id="mobile-demo" ref={(sidenav) => {this.sidenav = sidenav}}>
-					<li><a href="#about-container">About</a></li>
-					<li><a href="#portfolio-conatiner">Portfolio</a></li>
-					<li><a href="#footer-container">Contact</a></li>
-				</ul>
 			</div>
 		);
 	}

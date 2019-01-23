@@ -15,7 +15,7 @@ app.listen(PORT, () => {
 })
 
 if (process.env.NODE_ENV !== 'production') {
-	reload(app);
+	//reload(app);
 }
 
 
